@@ -6,6 +6,7 @@ import NotFoundPage from '../routes/notfound';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
+import About from '../routes/about';
 import Blogs from '../routes/blogs';
 import Blog from '../routes/blog';
 import Contact from '../routes/contact';
@@ -28,6 +29,7 @@ export default class App extends Component {
 					<Header />
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
+						<About path="/about/" />
 						<Blogs path="/blogs/" />
 						<Blog path="/blog/:name" />
 						<Contact path="/contact/" />
